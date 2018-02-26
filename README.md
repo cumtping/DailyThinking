@@ -16,7 +16,7 @@
 ## 简书地址：
 
     https://www.jianshu.com/u/1484bd1b3903
-    
+
 ## 微信订阅号：
 
     AndroidDevHub
