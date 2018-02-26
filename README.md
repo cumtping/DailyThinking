@@ -21,4 +21,4 @@
 
 ## 微信订阅号：
 
-    AndroidDevHub
+    ！[AndroidDevHub](https://github.com/cumtping/DailyThinking/blob/master/Z-screenshot/qrcode.jpg)
