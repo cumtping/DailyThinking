@@ -1,7 +1,7 @@
 # DailyThinking
 日常心得记录
 
-# AndroidSystem
+## AndroidSystem
 
     安卓系统知识；
    
