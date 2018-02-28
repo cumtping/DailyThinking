@@ -1,4 +1,4 @@
-- 1 如何将linux shell当前目录缩进？
+### 1 如何将linux shell当前目录缩进？
 
     vim ~/.bashrc
     if [ "$color_prompt" = yes ]; then
@@ -6,7 +6,7 @@
     else
         PS1="\[\033[1;32m\][\w]\[\033[0m\]\n\[\033[1;36m\]\u\[\033[1;33m\]-> "
 
-- 2 log 查看工具：glogg
+### 2 log 查看工具：glogg
 
     优点：搜索功能方便；
     
