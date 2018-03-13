@@ -7,6 +7,7 @@
 - [CS 20SI: Tensorflow for Deep Learning Research](https://www.bilibili.com/video/av9156347/?from=search&seid=6905181275544516403)
 - [cs20si: tensorflow for research 学习笔记1](https://zhuanlan.zhihu.com/p/28488510)
 - [TensorFlow中文社区](http://www.tensorfly.cn/)
+- [Github](https://github.com/tensorflow)
 
 ## 学习进度
 
