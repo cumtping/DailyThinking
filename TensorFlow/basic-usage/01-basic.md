@@ -51,5 +51,12 @@ print result
 sess.close()
 ```
 输出：</br>
-[[12.]]
+[[12.]]</br>
+Session 对象在使用完后需要关闭以释放资源. 除了显式调用 close 外, 也可以使用 "with" 代码块 来自动完成关闭动作.
+```
+with tf.Session() as sess:
+  result = sess.run([product])
+  print result
+```
 ### 
+
