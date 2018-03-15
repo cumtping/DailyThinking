@@ -9,8 +9,8 @@ a = tf.constant(10)
 b = tf.constant(32)
 print sess.run(a+b)
 ```
-输出：
-Hello, TensorFlow!
+输出：<\br>
+Hello, TensorFlow!<\br>
 42
 
 ### 构建图
@@ -30,4 +30,26 @@ matrix2 = tf.constant([[2.],[2.]])
 # 返回值 'product' 代表矩阵乘法的结果.
 product = tf.matmul(matrix1, matrix2)
 ```
-### 
+### 在session中启动图
+```
+# 启动默认图.
+sess = tf.Session()
+# 调用 sess 的 'run()' 方法来执行矩阵乘法 op, 传入 'product' 作为该方法的参数. 
+# 上面提到, 'product' 代表了矩阵乘法 op 的输出, 传入它是向方法表明, 我们希望取回
+# 矩阵乘法 op 的输出.
+#
+# 整个执行过程是自动化的, 会话负责传递 op 所需的全部输入. op 通常是并发执行的.
+# 
+# 函数调用 'run(product)' 触发了图中三个 op (两个常量 op 和一个矩阵乘法 op) 的执行.
+#
+# 返回值 'result' 是一个 numpy `ndarray` 对象.
+result = sess.run(product)
+print result
+# ==> [[ 12.]]
+
+# 任务完成, 关闭会话.
+sess.close()
+```
+输出：<\br>
+[[12.]]
+
