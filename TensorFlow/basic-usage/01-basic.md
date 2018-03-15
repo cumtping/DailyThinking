@@ -1,4 +1,5 @@
 ### hello world
+```
 import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
 sess = tf.Session()
@@ -7,12 +8,13 @@ print sess.run(hello)
 a = tf.constant(10)
 b = tf.constant(32)
 print sess.run(a+b)
-
+```
 输出：
 Hello, TensorFlow!
 42
 
 ### 构建图
+```
 import tensorflow as tf
 
 # 创建一个常量 op, 产生一个 1x2 矩阵. 这个 op 被作为一个节点
@@ -27,5 +29,5 @@ matrix2 = tf.constant([[2.],[2.]])
 # 创建一个矩阵乘法 matmul op , 把 'matrix1' 和 'matrix2' 作为输入.
 # 返回值 'product' 代表矩阵乘法的结果.
 product = tf.matmul(matrix1, matrix2)
-
+```
 ### 
