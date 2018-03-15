@@ -9,8 +9,8 @@ a = tf.constant(10)
 b = tf.constant(32)
 print sess.run(a+b)
 ```
-输出：<\br>
-Hello, TensorFlow!<\br>
+输出：</br>
+Hello, TensorFlow!</br>
 42
 
 ### 构建图
@@ -50,6 +50,6 @@ print result
 # 任务完成, 关闭会话.
 sess.close()
 ```
-输出：<\br>
+输出：</br>
 [[12.]]
-
+### 
