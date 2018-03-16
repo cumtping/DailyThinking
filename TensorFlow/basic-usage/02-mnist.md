@@ -33,13 +33,13 @@ softmax模型可以用来给不同的对象分配概率。</br>
 softmax回归（softmax regression）分两步：第一步</br>
 为了得到一张给定图片属于某个特定数字类的证据（evidence），我们对图片像素值进行加权求和。如果这个像素具有很强的证据说明这张图片不属于该类，那么相应的权值为负数，相反如果这个像素拥有有利的证据支持这张图片属于这个类，那么权值是正数。
 我们也需要加入一个额外的偏置量（bias），因为输入往往会带有一些无关的干扰量。因此对于给定的输入图片 x 它代表的是数字 i 的证据可以表示为
-[](http://www.tensorfly.cn/tfdoc/images/mnist1.png)</br>
-其中[](http://www.tensorfly.cn/tfdoc/images/mnist2.png)代表权重， [](http://www.tensorfly.cn/tfdoc/images/mnist3.png)代表数字 i 类的偏置量，j 代表给定图片 x 的像素索引用于像素求和。然后用softmax函数可以把这些证据转换成概率 y：</br>
-[](http://www.tensorfly.cn/tfdoc/images/mnist4.png)</br>
+！[](http://www.tensorfly.cn/tfdoc/images/mnist1.png)</br>
+其中！[](http://www.tensorfly.cn/tfdoc/images/mnist2.png)代表权重， ！[](http://www.tensorfly.cn/tfdoc/images/mnist3.png)代表数字 i 类的偏置量，j 代表给定图片 x 的像素索引用于像素求和。然后用softmax函数可以把这些证据转换成概率 y：</br>
+！[](http://www.tensorfly.cn/tfdoc/images/mnist4.png)</br>
 
 但是更多的时候把softmax模型函数定义为前一种形式：把输入值当成幂指数求值，再正则化这些结果值。这个幂运算表示，更大的证据对应更大的假设模型（hypothesis）里面的乘数权重值。反之，拥有更少的证据意味着在假设模型里面拥有更小的乘数系数。假设模型里的权值不可以是0值或者负值。Softmax然后会正则化这些权重值，使它们的总和等于1，以此构造一个有效的概率分布。（更多的关于Softmax函数的信息，可以参考Michael Nieslen的书里面的这个部分，其中有关于softmax的可交互式的可视化解释。）</br>
 我们也可以用向量表示这个计算过程：用矩阵乘法和向量相加。这有助于提高计算效率。（也是一种更有效的思考方式）</br>
-[](http://www.tensorfly.cn/tfdoc/images/softmax-regression-vectorequation.png)</br>
+！[](http://www.tensorfly.cn/tfdoc/images/softmax-regression-vectorequation.png)</br>
 ### 实现回归模型 
 为了用python实现高效的数值计算，我们通常会使用函数库，比如NumPy，会把类似矩阵乘法这样的复杂运算使用其他外部语言实现。不幸的是，从外部计算切换回Python的每一个操作，仍然是一个很大的开销。如果你用GPU来进行外部计算，这样的开销会更大。用分布式的计算方式，也会花费更多的资源用来传输数据。
 TensorFlow也把复杂的计算放在python之外完成，但是为了避免前面说的那些开销，它做了进一步完善。**Tensorflow不单独地运行单一的复杂计算，而是让我们可以先用图描述一系列可交互的计算操作，然后全部一起在Python之外运行**。（这样类似的运行方式，可以在不少的机器学习库中看到。）
@@ -61,4 +61,4 @@ y = tf.nn.softmax(tf.matmul(x,W) + b)
 ### 训练模型 
 我们通常定义指标来表示一个模型是坏的，这个指标称为**成本（cost）或损失（loss）**，然后尽量最小化这个指标</br>
 一个非常常见的，非常漂亮的成本函数是**“交叉熵”（cross-entropy）**。交叉熵产生于信息论里面的信息压缩编码技术，但是它后来演变成为从博弈论到机器学习等其他领域里的重要技术手段。它的定义如下：</br>
-[](http://www.tensorfly.cn/tfdoc/images/mnist10.png)</br>
+![交叉熵](http://www.tensorfly.cn/tfdoc/images/mnist10.png)</br>
