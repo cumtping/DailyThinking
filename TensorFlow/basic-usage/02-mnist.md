@@ -1,7 +1,4 @@
-### 原理
-
-
-[mnist](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/tutorials/mnist)
+[mnist](http://www.tensorfly.cn/tfdoc/tutorials/overview.html)
 ### mnist 数据下载
 下载[input_data.py](https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/examples/tutorials/mnist/input_data.py)，
 [input_data.py使用](http://blog.csdn.net/lwplwf/article/details/54896959)
