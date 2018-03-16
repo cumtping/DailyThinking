@@ -1,7 +1,7 @@
 [mnist](http://www.tensorfly.cn/tfdoc/tutorials/overview.html)
 ### mnist 数据下载
-下载[input_data.py](https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/examples/tutorials/mnist/input_data.py)，
-[input_data.py使用](http://blog.csdn.net/lwplwf/article/details/54896959)
+下载[input_data.py](https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/examples/tutorials/mnist/input_data.py)，</br>
+[input_data.py使用](http://blog.csdn.net/lwplwf/article/details/54896959),</br>
 新建get_input_data.py跟input_data.py放在同一个目录下，
 ```
 import input_data
