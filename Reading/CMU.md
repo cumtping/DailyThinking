@@ -7,6 +7,7 @@ Java 集合框架创办人，Joshua Bloch 领导了很多 Java 平台特性的�
 - **七大学院**SCS 计算机科学学院 (School of Computer Science), CIT 卡内基工学院(Carnegie Institute of Technology),艺术学院(College of Fine Arts),Tepper 商学院(Tepper School of Business),Dietrich 人文和社会科学学院 (Dietrich College of Humanities and Social Sciences),梅隆理学院 (Mellon College of Science, MCS),海因茨公共政策与管理学院 (H. John Heinz III College),软件工程研究院（Software Engineering Institute）。
 - **生词**， seminar 研讨会，escort 护送， transformative 变革， </br>
   Bachelor degree学士， Master degree 硕士， PhD 博士,</br>
+  助教(TA teaching assistance)、助研(RA research assistance),</br>
   
 - **Principles of Imperative Programming**命令式编程原则, 大多数专业生的第一门课，讲C顺带解决一大堆基本算法实现大多数简单数据结构，然后会接触很多低层细节，因为1.这玩意是C 2. 最后作业是写一个跑bytecode的VM出来.
 - **Introduction to Functional Programming** 函数型编程，我校著名的丧心病狂的SML系列课之一。基本就是把函数编程范式，理论加应用全来了一遍。其中顺带解决了**RegExp**(正则表达式)， **Alpha-Beta Pruning**(Alpha-Beta修剪)， **red-black tree**(红黑树)等等。
