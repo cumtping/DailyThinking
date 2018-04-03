@@ -1,5 +1,5 @@
 [wikipedia](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
-Alpha–beta pruning is a search algorithm that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. 
+- Alpha–beta pruning is a search algorithm that seeks to decrease the number of nodes that are evaluated by the minimax algorithm in its search tree. 
 AlphaBeta剪枝算法是一个搜索算法旨在减少在其搜索树中，被极大极小算法评估的节点数。
 ----
 - minimax algorithm, [极大极小算法](https://www.zhihu.com/question/27221568)</br>
