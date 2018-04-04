@@ -25,7 +25,7 @@ activity的启动模式：
     singleInstance如果应用1的任务栈中创建了MainActivity实例，如果应用2也要激活MainActivity，则不需要创建，两应用共享该Activity实例；大概就是比如来了通知，要打开Activity a，之后另外一个应用也要打开Activity a这样子会进入到两个不同的栈中，设置他的属性为singleInstace就会使他们进入到同一个栈。。不会重复创建Activity；
 
     参考：https://www.jianshu.com/p/78554606ea27
-    
+
 3. broadcast有哪几种？</br>
 4. service 有哪几种启动方式?</br>
 5. android 数据存储方式有哪几种？</br>
