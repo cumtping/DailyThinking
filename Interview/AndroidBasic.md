@@ -26,7 +26,7 @@ activity的启动模式：
 
     参考：https://www.jianshu.com/p/78554606ea27
     
-3. broadcast有哪几种？
-4. service 有哪几种启动方式?
-5. android 数据存储方式有哪几种？
-6. 如何保证content provider访问安全?
+3. broadcast有哪几种？</br>
+4. service 有哪几种启动方式?</br>
+5. android 数据存储方式有哪几种？</br>
+6. 如何保证content provider访问安全?</br>
