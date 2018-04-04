@@ -10,4 +10,20 @@ else
 
     优点：搜索功能方便；
     
-3 
+### 3 统计当前目录下各个文件夹下的md文件字数
+```
+function gitstat(){
+    for file in ./*
+    do
+        stty -echo
+        stat=`find $file -name "*.md" -print0 | xargs -0 cat | wc -m`
+        stty echo
+        echo $file $stat
+    done
+}
+```
+Q:如何将两次统计结果自动做对比？</br>
+A：</br>
+Q：如何用Python实现？</br>
+A：</br>
+
