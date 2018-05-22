@@ -1,11 +1,13 @@
 http://zh.lucida.me/blog/java-8-lambdas-insideout-language-features/
 
 frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/DarkIconDispatcherImpl.java
+```
 44          mTransitionsController = new LightBarTransitionsController(context,
 45                  this::setIconTintInternal);
 94      private void setIconTintInternal(float darkIntensity) {
-
+```
 frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/LightBarTransitionsController.java
+```
 66      public LightBarTransitionsController(Context context, DarkIntensityApplier applier) {
 199      /**
 200       * Interface to apply a specific dark intensity.
@@ -13,6 +15,20 @@ frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/Light
 202      public interface DarkIntensityApplier {
 203          void applyDarkIntensity(float darkIntensity);
 204      }
+```
+
+- lambda 表达式的语法由参数列表、箭头符号 -> 和函数体组成。函数体既可以是一个表达式，也可以是一个语句块：
+```
+(int x, int y) -> x + y
+() -> 42
+(String s) -> { System.out.println(s); }
+```
+
+- 第一个 lambda 表达式接收 x 和 y 这两个整形参数并返回它们的和；
+- 第二个 lambda 表达式不接收参数，返回整数 ‘42’；
+- 第三个 lambda 表达式接收一个字符串并把它打印到控制台，不返回值。
+
+
 ---
 http://lucida.me/blog/developer-reading-list/#htdp
 程序设计方法
