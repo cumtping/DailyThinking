@@ -1,5 +1,5 @@
 http://zh.lucida.me/blog/java-8-lambdas-insideout-language-features/
-lambda表达式 http://www.cnblogs.com/JohnTsai/p/5584905.html
+</br> lambda表达式 http://www.cnblogs.com/JohnTsai/p/5584905.html
 
 frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/DarkIconDispatcherImpl.java
 ```
