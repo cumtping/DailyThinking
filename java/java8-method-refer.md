@@ -1,6 +1,7 @@
 http://zh.lucida.me/blog/java-8-lambdas-insideout-language-features/
 </br> lambda表达式 http://www.cnblogs.com/JohnTsai/p/5584905.html
 </br> 函数式接口 https://www.cnblogs.com/heimianshusheng/p/5672641.html
+</br> Java 8系列之Stream的基本语法详解 https://blog.csdn.net/io_field/article/details/54971761
 
 frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/DarkIconDispatcherImpl.java
 ```
